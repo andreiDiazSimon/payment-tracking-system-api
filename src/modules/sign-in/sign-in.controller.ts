@@ -23,6 +23,7 @@ export class SignInController {
 
     return {
       message: 'Sign-in successful',
+      role: 'student',
       student: {
         id: student.id,
         username: student.username,

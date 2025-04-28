@@ -33,4 +33,13 @@ export class TransactionService {
       orderBy: { date: 'desc' }, // Sort transactions by date, descending
     });
   }
+
+
+  // Fetch transactions by student ID
+  async getTransactionsByStudentIddddd(studentId: number) {
+    return this.prisma.transaction.findMany({
+      where: { studentId: studentId },
+    });
+  }
+
 }
